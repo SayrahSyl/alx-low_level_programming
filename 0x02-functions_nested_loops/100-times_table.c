@@ -1,21 +1,30 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * main - Lists all the natural numbers below 1024 (excluded)
- * that are multiples of 3 or 5.
- *
- * Return: Always 0.
+ * jack_bauer - prints every minute of the day of Jack Bauer
+ * starting from 00:00 to 23:59
  */
-int main(void)
+void jack_bauer(void)
 {
-int i, sum = 0;
+int i, j;
 
-for (i = 0; i < 1024; i++)
+i = 0;
+
+while (i < 24)
 {
-if ((i % 3) == 0 || (i % 5) == 0)
-sum += i;
+j = 0;
+while (j < 60)
+{
+_putchar((i / 10) + '0');
+_putchar((i % 10) + '0');
+_putchar(':');
+_putchar((j / 10) + '0');
+_putchar((j % 10) + '0');
+_putchar('\n');
+j++;
+}
+i++;
 }
 
-printf("%d\n", sum);
-
-return (0);
 }
+
+
