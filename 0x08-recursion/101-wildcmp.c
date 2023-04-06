@@ -1,11 +1,11 @@
 #include "main.h"
+#include "_putchar_header.h"
 /** 
  * wildcmp - compare two strings
  * write a function that compares two strings
  * and returns  1 if the strings can be considered identical
  * otherwise return 0
  */
-
 int wildcmp(char *s1, char *s2)
 {
 	char *s1 == '\0'
